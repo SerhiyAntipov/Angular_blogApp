@@ -35,4 +35,6 @@ export class AppComponent implements OnInit{
     // console.log('removePost id', id)
     this.posts = this.posts.filter(newPost => newPost.id !== id )
   }
+
+  isVisible: boolean = true
 }
