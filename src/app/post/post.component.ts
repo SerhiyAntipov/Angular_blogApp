@@ -1,7 +1,6 @@
 import {
   AfterContentChecked,
   AfterContentInit,
-  ChangeDetectionStrategy,
   Component,
   ContentChild,
   DoCheck,
@@ -11,7 +10,8 @@ import {
   OnChanges,
   OnInit,
   Output,
-  SimpleChanges
+  SimpleChanges,
+  ViewEncapsulation
 } from '@angular/core';
 import {Post} from "../app.component";
 
@@ -21,6 +21,7 @@ import {Post} from "../app.component";
   styleUrls: ['./post.component.scss'],
   // changeDetection: ChangeDetectionStrategy.Default
   // changeDetection: ChangeDetectionStrategy.OnPush
+  encapsulation: ViewEncapsulation.None
 })
 export class PostComponent implements
     OnInit,
