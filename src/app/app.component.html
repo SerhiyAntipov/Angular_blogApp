@@ -31,10 +31,25 @@
 
   <hr>
   <button class="btn" (click)="isVisible = !isVisible">Toggle</button>
-  <div class="wrapp" *ngIf="isVisible">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error natus provident quo, sequi similique.</p>
-  </div>
 
+<!--  <div class="wrapp" *ngIf="isVisible">-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error natus provident quo, sequi similique.</p>-->
+<!--  </div>-->
+
+<!--  <ng-template  [ngIf]="isVisible">-->
+<!--    <div class="wrapp">-->
+<!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error natus provident quo, sequi similique.</p>-->
+<!--    </div>-->
+<!--  </ng-template>-->
+
+<!--  <div class="wrapp" *appIfnot="!isVisible">-->
+<!--    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error natus provident quo, sequi similique.</p>-->
+<!--  </div>-->
+  <ng-template [appIfnot]="!isVisible">
+    <div class="wrapp">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad error natus provident quo, sequi similique.</p>
+    </div>
+  </ng-template>
 
 </div>
 
